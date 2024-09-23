@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation</title>
+
+
+  <!-- Google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Daisy Ui + Tailwind CSS  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Customizing Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'color-success': '#B4F461',
+            'color-dark': '#111111',
+            'color-mute': '#11111185',
+            'color-primary': '#FFFFFF',
+            'color-secondary': '#f9f7f3'
+          },
+          fontFamily: {
+            lexend: 'Lexend',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-lexend relative
+">
+  <header class="sticky top-0 left-0 border-b-2 mb-4">
+    <div class="bg-color-secondary px-5">
+      <div class="max-w-6xl mx-auto ">
+        <nav class="hidden md:flex flex-col md:flex-row gap-4 items-center justify-between p-6">
+          <div>
+            <button ><a class="btn text-base md:text-xl font-semibold text-color-dark bg-color-success rounded-lg py-3 px-8"
+                href="index.html">Home</a></button>
+          </div>
+          <div class="flex gap-4 items-center">
+            <img class="max-w-8 md:max-w-12" src="assets/logo.png" alt="">
+            <a class="text-base md:text-xl font-semibold text-color-dark" href="#">Donate Bangladesh</a>
+          </div>
+
+          <div class="flex gap-3 items-center">
+            <img class="max-w-8 lg:max-w-12" src="assets/coin.png" alt="">
+            <h2 class="text-base md:text-xl text-color-dark font-semibold"><span class="mr-3">1000</span>BDT</h2>
+          </div>
+        </nav>
+
+        <!-- small device  -->
+        <nav class="md:hidden flex flex-col md:flex-row gap-4 items-center justify-between p-6">
+          <div class="flex gap-4 items-center">
+            <img class="max-w-8 md:max-w-12" src="assets/logo.png" alt="">
+            <a class="text-base md:text-xl font-semibold text-color-dark" href="#">Donate Bangladesh</a>
+          </div>
+
+          <div class="w-full flex items-center justify-between">
+            <div>
+              <button ><a class="btn text-base md:text-xl font-semibold text-color-dark bg-color-success rounded-lg py-3 px-8"
+                  href="#">Blog</a></button>
+            </div>
+           
+            <div class="flex gap-3 items-center">
+              <img class="max-w-8 lg:max-w-12" src="assets/coin.png" alt="">
+              <h2 class="text-base md:text-xl text-color-dark font-semibold"><span class="mr-3">1000</span>BDT</h2>
+            </div>
+          </div>
+        </nav>
+
+
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 mb-8">
+
+    <h2 class="text-3xl font-bold text-color-dark text-center mt-6 md:mt-10">FAQ</h2>
+
+    <!-- card-container -->
+    <div class="space-y-6 mt-6 ">
+      <!-- Card 1 -->
+      <div class="border rounded-2xl p-6 md:p-8 grid grid-cols-1 gap-6">
+
+        <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents, representing the page structure as a tree of objects. It allows scripts like JavaScript to access, modify, and manipulate HTML or XML content dynamically. Each element, attribute, and text is represented as a node within the tree</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM in JavaScript, you can use methods like document.getElementById('id'), document.querySelector('selector'), or document.getElementsByClassName('class'). These methods allow you to target elements by their ID, class, or CSS selectors.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events from its child elements. It's useful because it improves performance by reducing the number of event listeners and allows dynamic child elements to be handled efficiently. This also simplifies event management.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>You can manipulate an element's attributes using JavaScript by selecting the element with document.getElementById() or similar methods, and then modifying attributes with setAttribute() or directly accessing properties like element.src. To change styles, use element.style.propertyName = value or modify class names with classList.</p>
+            </div>
+          </div>
+           
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
