@@ -8,11 +8,10 @@ function getInputValueById(id){
     return inputValue;
 }
 
-// function checkAvailableBalance(available){
-// if(available >= 0 ){
-
-// }else{
-//     alert("You don't have enough balance to donate...")
-//     return;
-// }
-// }
+function toggleBtn(id1, id2){
+    document.getElementById('donation-btn').classList.remove('text-color-dark', 'border-color-success', 'bg-color-success', 'text-color-mute', 'border-color-mute', 'bg-color-primary' )
+    document.getElementById('history-btn').classList.remove('text-color-dark', 'border-color-success', 'bg-color-success', 'text-color-mute', 'border-color-mute', 'bg-color-primary')
+    // show btn 
+    document.getElementById(id1).classList.add('text-color-dark', 'border-color-success', 'bg-color-success');
+    document.getElementById(id2).classList.add('text-color-mute', 'border-color-mute', 'bg-color-primary');
+}
