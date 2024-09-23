@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donation</title>
+  <title>Donation/home</title>
 
 
   <!-- Google font  -->
@@ -40,12 +40,12 @@
 
 </head>
 
-<body class="font-lexend relative
-">
+<body class="font-lexend relative">
+  <!-- Header  -->
   <header class="sticky top-0 left-0 border-b-2 mb-4">
     <div class="bg-color-secondary px-5">
       <div class="max-w-6xl mx-auto ">
-        <nav class="hidden md:flex flex-col md:flex-row gap-4 items-center justify-between p-6">
+        <nav class=" flex flex-col md:flex-row gap-4 items-center justify-between p-6">
           <div>
             <button ><a class="btn text-base md:text-xl font-semibold text-color-dark bg-color-success rounded-lg py-3 px-8"
                 href="blog.html">Blog</a></button>
@@ -57,12 +57,12 @@
 
           <div class="flex gap-3 items-center">
             <img class="max-w-8 lg:max-w-12" src="assets/coin.png" alt="">
-            <h2 class="text-base md:text-xl text-color-dark font-semibold"><span class="mr-3">1000</span>BDT</h2>
+            <h2 class="text-base md:text-xl text-color-dark font-semibold"><span id="available-balance" class="mr-3">5000</span>BDT</h2>
           </div>
         </nav>
 
         <!-- small device  -->
-        <nav class="md:hidden flex flex-col md:flex-row gap-4 items-center justify-between p-6">
+        <!-- <nav class="md:hidden flex flex-col md:flex-row gap-4 items-center justify-between p-6">
           <div class="flex gap-4 items-center">
             <img class="max-w-8 md:max-w-12" src="assets/logo.png" alt="">
             <a class="text-base md:text-xl font-semibold text-color-dark" href="#">Donate Bangladesh</a>
@@ -71,15 +71,15 @@
           <div class="w-full flex items-center justify-between">
             <div>
               <button ><a class="btn text-base md:text-xl font-semibold text-color-dark bg-color-success rounded-lg py-3 px-8"
-                  href="#">Blog</a></button>
+                  href="blog.html">Blog</a></button>
             </div>
            
             <div class="flex gap-3 items-center">
               <img class="max-w-8 lg:max-w-12" src="assets/coin.png" alt="">
-              <h2 class="text-base md:text-xl text-color-dark font-semibold"><span class="mr-3">1000</span>BDT</h2>
+              <h2 class="text-base md:text-xl text-color-dark font-semibold"><span class="mr-3">5000</span>BDT</h2>
             </div>
           </div>
-        </nav>
+        </nav> -->
 
 
       </div>
@@ -91,8 +91,8 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main class="max-w-6xl mx-auto px-6 mb-8">
-
     <!-- card-container -->
     <div class="space-y-6">
       <!-- Card 1 -->
@@ -103,12 +103,12 @@
         <div class="space-y-4">
           <button class="flex gap-2 items-center bg-gray-100 px-4 py-3 rounded-md ">
             <img class="max-w-6 max-h-6" src="assets/coin.png" alt="">
-            <h2 class="text-base text-color-mute font-semibold"><span class="mr-3">0</span>BDT</h2>
+            <h2 class="text-base text-color-mute font-semibold"><span id="noakhali-donate-amount" class="mr-3">0</span>BDT</h2>
           </button>
           <h2 class="font-bold text-color-dark text-xl leading-7">Donate for Flood at Noakhali, Bangladesh</h2>
           <p class="text-color-mute font-light text-base">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-          <input class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
-          <div class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
+          <input id="noakhali-donate-input" class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
+          <div id="noakhali-donate-btn" class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
         </div>
       </div>
 
@@ -120,12 +120,12 @@
         <div class="space-y-4">
           <button class="flex gap-2 items-center bg-gray-100 px-4 py-3 rounded-md ">
             <img class="max-w-6 max-h-6" src="assets/coin.png" alt="">
-            <h2 class="text-base text-color-mute font-semibold"><span class="mr-3">600</span>BDT</h2>
+            <h2 class="text-base text-color-mute font-semibold"><span  id="feni-donate-amount" class="mr-3">600</span>BDT</h2>
           </button>
           <h2 class="font-bold text-color-dark text-xl leading-7">Donate for Flood Relief in Feni,Bangladesh</h2>
           <p class="text-color-mute font-light text-base">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-          <input class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
-          <div class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
+          <input id="feni-donate-input" class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
+          <div id="feni-donate-btn" class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
         </div>
       </div>
 
@@ -137,16 +137,21 @@
               <div class="space-y-4">
                 <button class="flex gap-2 items-center bg-gray-100 px-4 py-3 rounded-md ">
                   <img class="max-w-6 max-h-6" src="assets/coin.png" alt="">
-                  <h2 class="text-base text-color-mute font-semibold"><span class="mr-3">2400</span>BDT</h2>
+                  <h2 class="text-base text-color-mute font-semibold"><span id="quota-donate-amount" class="mr-3">2400</span>BDT</h2>
                 </button>
                 <h2 class="font-bold text-color-dark text-xl leading-7">Aid for Injured in the Quota Movement</h2>
                 <p class="text-color-mute font-light text-base">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure  that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider and making a donation to support these brave individuals in their time of need.</p>
-                <input class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
-                <div class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
+                <input id="quota-donate-input" class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" placeholder="Write Donation Amount">
+                <div id="quota-donate-btn" class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
               </div>
             </div>
     </div>
   </main>
+
+
+  <!-- JavaScript -->
+   <script src="js/common-functions.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
