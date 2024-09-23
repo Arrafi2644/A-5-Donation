@@ -108,7 +108,7 @@
           <h2 class="font-bold text-color-dark text-xl leading-7">Donate for Flood at Noakhali, Bangladesh</h2>
           <p class="text-color-mute font-light text-base">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
           <input id="noakhali-donate-input" class="p-3 text-base rounded-lg color-mute border w-full" type="text" name="" id="" placeholder="Write Donation Amount">
-          <div id="noakhali-donate-btn" class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer">Donate Now</div>
+          <div id="noakhali-donate-btn" class="btn w-full text-color-dark font-bold text-base lg:text-xl p-3 bg-color-success text-center rounded-lg cursor-pointer" >Donate Now</div>
         </div>
       </div>
 
@@ -147,6 +147,25 @@
             </div>
     </div>
   </main>
+
+    <!-- modal start  -->
+  <!-- Open the modal using ID.showModal() method -->
+ <!-- onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box flex items-center justify-center flex-col">
+    <h3 class="text-4xl font-bold">Congrates!</h3>
+    <img src="assets/coin.png" alt="">
+    <p class="py-4">You Have Donated for Humankind</p>
+    <h3 class="font-bold text-2xl">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+  <!-- modal end  -->
 
 
   <!-- JavaScript -->

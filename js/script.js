@@ -20,7 +20,10 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
         document.getElementById('noakhali-donate-amount').innerText = newNoakhaliTotalDonateAmount;
 
         document.getElementById('noakhali-donate-input').value = "";
+
+        document.getElementById('my_modal_1').showModal()
     }
+
 
 
 });
@@ -47,6 +50,8 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
         document.getElementById('available-balance').innerText = newAvailableBalance;
 
         document.getElementById('feni-donate-input').value = "";
+
+        document.getElementById('my_modal_1').showModal();
     }
 
 });
@@ -73,6 +78,9 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
         document.getElementById('quota-donate-amount').innerText = newQuotaTotalDonateAmount;
 
         document.getElementById('quota-donate-input').value = "";
+
+        document.getElementById('my_modal_1').showModal();
+
     }
 
 });
