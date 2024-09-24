@@ -9,7 +9,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
     const newNoakhaliTotalDonateAmount = noakhaliTotalDonateAmount + noakhaliDonateAmount;
 
     // Donate validation
-    if (isNaN(noakhaliDonateAmount)) {
+    if (isNaN(noakhaliDonateAmount) || noakhaliDonateAmount <= 0) {
         alert("Invalid donation amount!!!")
         return;
     }else if(newAvailableBalance < 0){
@@ -53,7 +53,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function ()
     const newFeniTotalDonateAmount = feniTotalDonateAmount + feniDonateAmount;
 
     // Donate Validation 
-    if (isNaN(feniDonateAmount)) {
+    if (isNaN(feniDonateAmount) || feniDonateAmount <= 0) {
         alert("Invalid donation amount!!!")
         return;
     } else if (newAvailableBalance < 0) {
@@ -96,7 +96,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
     const newQuotaTotalDonateAmount = quotaTotalDonateAmount + quotaDonateAmount;
 
     // Donate Validation 
-    if (isNaN(quotaDonateAmount)) {
+    if (isNaN(quotaDonateAmount) || quotaDonateAmount <= 0) {
         alert("Invalid donation amount!!!")
         return;
     } else if (newAvailableBalance < 0) {
